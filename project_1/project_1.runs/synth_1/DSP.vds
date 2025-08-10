@@ -1,0 +1,486 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Jul 31 20:57:11 2024
+# Process ID: 6688
+# Current directory: C:/Users/lenovo/Desktop/assignments digital/project 1/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log DSP.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DSP.tcl
+# Log file: C:/Users/lenovo/Desktop/assignments digital/project 1/project_1/project_1.runs/synth_1/DSP.vds
+# Journal file: C:/Users/lenovo/Desktop/assignments digital/project 1/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source DSP.tcl -notrace
+Command: synth_design -top DSP -part xc7a200tffg1156-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2532 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 355.930 ; gain = 98.828
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'DSP' [C:/Users/lenovo/Desktop/assignments digital/project 1/project1.v:1]
+	Parameter A0REG bound to: 0 - type: integer 
+	Parameter A1REG bound to: 1 - type: integer 
+	Parameter B0REG bound to: 0 - type: integer 
+	Parameter B1REG bound to: 1 - type: integer 
+	Parameter CREG bound to: 1 - type: integer 
+	Parameter DREG bound to: 1 - type: integer 
+	Parameter MREG bound to: 1 - type: integer 
+	Parameter PREG bound to: 1 - type: integer 
+	Parameter CARRYINREG bound to: 1 - type: integer 
+	Parameter CARRYOUTREG bound to: 1 - type: integer 
+	Parameter OPMODEREG bound to: 1 - type: integer 
+	Parameter CARRYINSEL bound to: OPMODE5 - type: string 
+	Parameter B_INPUT bound to: DIRECT - type: string 
+	Parameter rsttype bound to: sync - type: string 
+INFO: [Synth 8-6157] synthesizing module 'combine' [C:/Users/lenovo/Desktop/assignments digital/project 1/flipflop_mux.v:1]
+	Parameter sel bound to: 1 - type: integer 
+	Parameter size bound to: 8 - type: integer 
+	Parameter rsttype bound to: sync - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'combine' (1#1) [C:/Users/lenovo/Desktop/assignments digital/project 1/flipflop_mux.v:1]
+INFO: [Synth 8-6157] synthesizing module 'combine__parameterized0' [C:/Users/lenovo/Desktop/assignments digital/project 1/flipflop_mux.v:1]
+	Parameter sel bound to: 1 - type: integer 
+	Parameter size bound to: 18 - type: integer 
+	Parameter rsttype bound to: sync - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'combine__parameterized0' (1#1) [C:/Users/lenovo/Desktop/assignments digital/project 1/flipflop_mux.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/lenovo/Desktop/assignments digital/project 1/mux_2to1.v:1]
+	Parameter size bound to: 18 - type: integer 
+	Parameter sel1 bound to: DIRECT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (2#1) [C:/Users/lenovo/Desktop/assignments digital/project 1/mux_2to1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'combine__parameterized1' [C:/Users/lenovo/Desktop/assignments digital/project 1/flipflop_mux.v:1]
+	Parameter sel bound to: 0 - type: integer 
+	Parameter size bound to: 18 - type: integer 
+	Parameter rsttype bound to: sync - type: string 
+WARNING: [Synth 8-6014] Unused sequential element outflip1_reg was removed.  [C:/Users/lenovo/Desktop/assignments digital/project 1/flipflop_mux.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'combine__parameterized1' (2#1) [C:/Users/lenovo/Desktop/assignments digital/project 1/flipflop_mux.v:1]
+INFO: [Synth 8-6157] synthesizing module 'combine__parameterized2' [C:/Users/lenovo/Desktop/assignments digital/project 1/flipflop_mux.v:1]
+	Parameter sel bound to: 1 - type: integer 
+	Parameter size bound to: 48 - type: integer 
+	Parameter rsttype bound to: sync - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'combine__parameterized2' (2#1) [C:/Users/lenovo/Desktop/assignments digital/project 1/flipflop_mux.v:1]
+INFO: [Synth 8-6157] synthesizing module 'combine__parameterized3' [C:/Users/lenovo/Desktop/assignments digital/project 1/flipflop_mux.v:1]
+	Parameter sel bound to: 1 - type: integer 
+	Parameter size bound to: 36 - type: integer 
+	Parameter rsttype bound to: sync - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'combine__parameterized3' (2#1) [C:/Users/lenovo/Desktop/assignments digital/project 1/flipflop_mux.v:1]
+INFO: [Synth 8-6157] synthesizing module 'combine__parameterized4' [C:/Users/lenovo/Desktop/assignments digital/project 1/flipflop_mux.v:1]
+	Parameter sel bound to: 1 - type: integer 
+	Parameter size bound to: 1 - type: integer 
+	Parameter rsttype bound to: sync - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'combine__parameterized4' (2#1) [C:/Users/lenovo/Desktop/assignments digital/project 1/flipflop_mux.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux4' [C:/Users/lenovo/Desktop/assignments digital/project 1/mux_4to1.v:1]
+	Parameter size bound to: 48 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux4' (3#1) [C:/Users/lenovo/Desktop/assignments digital/project 1/mux_4to1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'DSP' (4#1) [C:/Users/lenovo/Desktop/assignments digital/project 1/project1.v:1]
+WARNING: [Synth 8-3331] design combine__parameterized2 has unconnected port clk
+WARNING: [Synth 8-3331] design combine__parameterized2 has unconnected port CE
+WARNING: [Synth 8-3331] design combine__parameterized2 has unconnected port RST
+WARNING: [Synth 8-3331] design combine__parameterized4 has unconnected port clk
+WARNING: [Synth 8-3331] design combine__parameterized4 has unconnected port CE
+WARNING: [Synth 8-3331] design combine__parameterized4 has unconnected port RST
+WARNING: [Synth 8-3331] design combine__parameterized3 has unconnected port clk
+WARNING: [Synth 8-3331] design combine__parameterized3 has unconnected port CE
+WARNING: [Synth 8-3331] design combine__parameterized3 has unconnected port RST
+WARNING: [Synth 8-3331] design combine__parameterized0 has unconnected port clk
+WARNING: [Synth 8-3331] design combine__parameterized0 has unconnected port CE
+WARNING: [Synth 8-3331] design combine__parameterized0 has unconnected port RST
+WARNING: [Synth 8-3331] design mux2 has unconnected port b[17]
+WARNING: [Synth 8-3331] design mux2 has unconnected port b[16]
+WARNING: [Synth 8-3331] design mux2 has unconnected port b[15]
+WARNING: [Synth 8-3331] design mux2 has unconnected port b[14]
+WARNING: [Synth 8-3331] design mux2 has unconnected port b[13]
+WARNING: [Synth 8-3331] design mux2 has unconnected port b[12]
+WARNING: [Synth 8-3331] design mux2 has unconnected port b[11]
+WARNING: [Synth 8-3331] design mux2 has unconnected port b[10]
+WARNING: [Synth 8-3331] design mux2 has unconnected port b[9]
+WARNING: [Synth 8-3331] design mux2 has unconnected port b[8]
+WARNING: [Synth 8-3331] design mux2 has unconnected port b[7]
+WARNING: [Synth 8-3331] design mux2 has unconnected port b[6]
+WARNING: [Synth 8-3331] design mux2 has unconnected port b[5]
+WARNING: [Synth 8-3331] design mux2 has unconnected port b[4]
+WARNING: [Synth 8-3331] design mux2 has unconnected port b[3]
+WARNING: [Synth 8-3331] design mux2 has unconnected port b[2]
+WARNING: [Synth 8-3331] design mux2 has unconnected port b[1]
+WARNING: [Synth 8-3331] design mux2 has unconnected port b[0]
+WARNING: [Synth 8-3331] design combine has unconnected port clk
+WARNING: [Synth 8-3331] design combine has unconnected port CE
+WARNING: [Synth 8-3331] design combine has unconnected port RST
+WARNING: [Synth 8-3331] design DSP has unconnected port CARRYIN
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 410.730 ; gain = 153.629
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 410.730 ; gain = 153.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 410.730 ; gain = 153.629
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tffg1156-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/lenovo/Desktop/assignments digital/project 1/project_constrain.xdc]
+Finished Parsing XDC File [C:/Users/lenovo/Desktop/assignments digital/project 1/project_constrain.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/lenovo/Desktop/assignments digital/project 1/project_constrain.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/DSP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/DSP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 797.301 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 797.301 ; gain = 540.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tffg1156-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 797.301 ; gain = 540.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 797.301 ; gain = 540.199
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/lenovo/Desktop/assignments digital/project 1/project1.v:47]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 797.301 ; gain = 540.199
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     49 Bit       Adders := 1     
+	   3 Input     49 Bit       Adders := 2     
+	   3 Input     18 Bit       Adders := 1     
++---Registers : 
+	               18 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     48 Bit        Muxes := 2     
+	   2 Input     48 Bit        Muxes := 1     
+	   2 Input     35 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module DSP 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     49 Bit       Adders := 1     
+	   3 Input     49 Bit       Adders := 2     
+	   3 Input     18 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     48 Bit        Muxes := 1     
+	   2 Input     35 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module combine__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               18 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 1     
+Module mux4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     48 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP mult_out, operation Mode is: C+A2*B.
+DSP Report: register a0_reg/outflip_reg is absorbed into DSP mult_out.
+DSP Report: operator mult_out is absorbed into DSP mult_out.
+DSP Report: operator mult_out is absorbed into DSP mult_out.
+WARNING: [Synth 8-3331] design DSP has unconnected port CARRYIN
+WARNING: [Synth 8-3331] design DSP has unconnected port BCIN[17]
+WARNING: [Synth 8-3331] design DSP has unconnected port BCIN[16]
+WARNING: [Synth 8-3331] design DSP has unconnected port BCIN[15]
+WARNING: [Synth 8-3331] design DSP has unconnected port BCIN[14]
+WARNING: [Synth 8-3331] design DSP has unconnected port BCIN[13]
+WARNING: [Synth 8-3331] design DSP has unconnected port BCIN[12]
+WARNING: [Synth 8-3331] design DSP has unconnected port BCIN[11]
+WARNING: [Synth 8-3331] design DSP has unconnected port BCIN[10]
+WARNING: [Synth 8-3331] design DSP has unconnected port BCIN[9]
+WARNING: [Synth 8-3331] design DSP has unconnected port BCIN[8]
+WARNING: [Synth 8-3331] design DSP has unconnected port BCIN[7]
+WARNING: [Synth 8-3331] design DSP has unconnected port BCIN[6]
+WARNING: [Synth 8-3331] design DSP has unconnected port BCIN[5]
+WARNING: [Synth 8-3331] design DSP has unconnected port BCIN[4]
+WARNING: [Synth 8-3331] design DSP has unconnected port BCIN[3]
+WARNING: [Synth 8-3331] design DSP has unconnected port BCIN[2]
+WARNING: [Synth 8-3331] design DSP has unconnected port BCIN[1]
+WARNING: [Synth 8-3331] design DSP has unconnected port BCIN[0]
+WARNING: [Synth 8-3331] design DSP has unconnected port RSTM
+WARNING: [Synth 8-3331] design DSP has unconnected port RSTP
+WARNING: [Synth 8-3331] design DSP has unconnected port RSTC
+WARNING: [Synth 8-3331] design DSP has unconnected port RSTD
+WARNING: [Synth 8-3331] design DSP has unconnected port RSTCARRYIN
+WARNING: [Synth 8-3331] design DSP has unconnected port RSTOPMODE
+WARNING: [Synth 8-3331] design DSP has unconnected port CEM
+WARNING: [Synth 8-3331] design DSP has unconnected port CEP
+WARNING: [Synth 8-3331] design DSP has unconnected port CEC
+WARNING: [Synth 8-3331] design DSP has unconnected port CED
+WARNING: [Synth 8-3331] design DSP has unconnected port CECARRYIN
+WARNING: [Synth 8-3331] design DSP has unconnected port CEOPMODE
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 797.301 ; gain = 540.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|DSP         | C+A2*B      | 18     | 17     | 35     | -      | 36     | 1    | 0    | 0    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 857.855 ; gain = 600.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_467/Z'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_461/Z'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_449/Z'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_455/Z'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_443/Z'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_437/Z'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_425/Z'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_431/Z'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_419/Z'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_413/Z'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_401/Z'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_407/Z'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_395/Z'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_389/Z'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_377/Z'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_383/Z'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_371/Z'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_365/Z'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_713/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_718/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_693/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_698/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_703/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_708/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_673/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_678/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_683/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_688/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_653/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_658/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_663/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_668/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_633/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_638/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_643/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_648/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_623/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_628/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_618/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_613/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_236/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_232/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_224/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_228/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_588/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_583/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_578/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_2/i_573/O'
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 858.742 ; gain = 601.641
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 878.973 ; gain = 621.871
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 878.973 ; gain = 621.871
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 878.973 ; gain = 621.871
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 878.973 ; gain = 621.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 878.973 ; gain = 621.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 878.973 ; gain = 621.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 878.973 ; gain = 621.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |    44|
+|3     |DSP48E1 |     1|
+|4     |LUT1    |     1|
+|5     |LUT2    |    59|
+|6     |LUT3    |    84|
+|7     |LUT4    |    70|
+|8     |LUT5    |   170|
+|9     |LUT6    |    80|
+|10    |FDRE    |    36|
+|11    |IBUF    |   163|
+|12    |OBUF    |   152|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------+--------------------------+------+
+|      |Instance |Module                    |Cells |
++------+---------+--------------------------+------+
+|1     |top      |                          |   861|
+|2     |  a0_reg |combine__parameterized1   |   107|
+|3     |  b0_reg |combine__parameterized1_0 |   159|
++------+---------+--------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 878.973 ; gain = 621.871
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 79 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 878.973 ; gain = 235.301
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 878.973 ; gain = 621.871
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 208 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+31 Infos, 114 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 878.973 ; gain = 634.895
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/lenovo/Desktop/assignments digital/project 1/project_1/project_1.runs/synth_1/DSP.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file DSP_utilization_synth.rpt -pb DSP_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.080 . Memory (MB): peak = 878.973 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 31 20:57:47 2024...
